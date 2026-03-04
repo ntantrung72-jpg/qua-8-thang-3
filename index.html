@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Trung To You ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="login-screen" class="login-container">
+        <div class="login-box">
+            <h2>Hello 🌸</h2>
+            <p>Nhập tên và mật khẩu để nhận quà nhé hehe!</p>
+            <input type="text" id="username" placeholder="Tên của bạn là gì?" autocomplete="off">
+            <input type="password" id="password" placeholder="Mật khẩu (4 số)">
+            <button class="login-btn" onclick="checkLogin()">Mở Quà 🎁</button>
+            <p id="error-msg" class="error" style="display: none;">Mật khẩu chưa đúng rồi, thử lại nhé!</p>
+        </div>
+    </div>
+
+    <div id="main-menu" class="container" style="display: none;">
+        <div class="menu-grid">
+            <button class="menu-btn" onclick="openModal('musicModal')">
+                <span class="icon">🎵</span> Music
+            </button>
+            <button class="menu-btn" onclick="openModal('letterModal')">
+                <span class="icon">💌</span> Letter
+            </button>
+            <button class="menu-btn" onclick="openModal('imageModal')">
+                <span class="icon">🖼️</span> Image
+            </button>
+            <button class="menu-btn" onclick="openModal('giftModal')">
+                <span class="icon">🎁</span> Gift
+            </button>
+        </div>
+    </div>
+
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('musicModal')">✖</button>
+            <div class="music-player">
+                <div class="cd-thumb" id="cd-thumb"></div>
+                <h2 id="song-title">Tên Bài Hát</h2>
+                <p id="song-artist">Tên Ca Sĩ</p>
+                <audio id="audio-player"></audio>
+
+                <div class="controls">
+                    <button class="control-btn" onclick="prevSong()">⏮</button>
+                    <button class="control-btn play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+                    <button class="control-btn" onclick="nextSong()">⏭</button>
+                </div>
+
+                <div class="playlist-container" id="playlist-container">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="letterModal" class="modal">
+        <div class="modal-content letter-content">
+            <button class="close-btn" onclick="closeModal('letterModal')">✖</button>
+            <div class="envelope">
+                <h2 id="letter-greeting">Gửi...</h2>
+                <div class="letter-text" id="typewriter-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content image-gallery-content">
+            <button class="close-btn" onclick="closeModal('imageModal')">✖</button>
+            <h2>Kỷ Niệm ✨📸</h2>
+
+            <div class="image-grid">
+                <div class="polaroid-item horizontal">
+                    <img src="./assets/memory/1772615776705.jpg" alt="Memory 1">
+                </div>
+                <div class="polaroid-item horizontal">
+                    <img src="./assets/memory/1772615776756.jpg" alt="Memory 2">
+                </div>
+
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007951.jpg" alt="Memory 3">
+                </div>
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007956.jpg" alt="Memory 4">
+                </div>
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007957.jpg" alt="Memory 5">
+                </div>
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007636.jpg" alt="Memory 6">
+                </div>
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007949.jpg" alt="Memory 7">
+                </div>
+                <div class="polaroid-item vertical">
+                    <img src="./assets/memory/1000007953.jpg" alt="Memory 8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="giftModal" class="modal">
+        <div class="modal-content gift-content">
+            <button class="close-btn" onclick="closeModal('giftModal')">✖</button>
+            <div class="flower-container" id="flower-container">
+                <div class="css-rose-3d" id="css-rose-3d">
+                    <div class="stem"></div>
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                    <div class="rose-head">
+                        <div class="petal-class petal-1"></div>
+                        <div class="petal-class petal-2"></div>
+                        <div class="petal-class petal-3"></div>
+                        <div class="petal-class petal-4"></div>
+                        <div class="petal-class petal-5"></div>
+                        <div class="rose-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
