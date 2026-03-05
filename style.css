@@ -711,3 +711,14 @@ button, input, .menu-btn, .close-btn, .control-btn, .polaroid-item, .playlist-it
         transform: translateY(115vh) rotate(360deg);
     }
 }
+/* --- Chữ kết thúc thư viện ảnh --- */
+.end-gallery-text {
+    grid-column: span 2; /* Ép dòng chữ chiếm trọn 2 cột lưới ảnh */
+    text-align: center;
+    color: #ff69b4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+    font-style: italic;
+    opacity: 0.8; /* Làm mờ đi một chút xíu cho tự nhiên */
+}
