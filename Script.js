@@ -9,7 +9,7 @@ let giftInterval;
 const playlist = [
     {
         title: "Em Đồng Ý (I Do)",
-        artist: "Đức Phúc x 911",
+        artist: "Đức Phúc, 911",
         src: "./music/ido.m4a",
         cover: "./assets/music picture/ido.jpg"
     },
@@ -21,7 +21,7 @@ const playlist = [
     },
     {
         title: "Ánh Sao Và Bầu Trời",
-        artist: "T.R.I x Cá",
+        artist: "T.R.I, Cá",
         src: "./music/anhsaovabautroi.m4a",
         cover: "./assets/music picture/anhsaovabautroi.png"
     },
@@ -42,6 +42,18 @@ const playlist = [
         artist: "Đức Phúc",
         src: "./music/ngaydautien.m4a",
         cover: "./assets/music picture/ngaydautien.jpg"
+    },
+    {
+        title: "Có Đôi Điều",
+        artist: "Shiki",
+        src: "./music/codoidieu.mp3",
+        cover: "./assets/music picture/codoidieu.jpg"
+    },
+    {
+        title: "Bạn Đời",
+        artist: "Karik, GDucky",
+        src: "./music/bandoi.m4a",
+        cover: "./assets/music picture/bandoi.jpg"
     },
     {
         title: "Double Take",
